@@ -1,0 +1,70 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'bulma' ]
+2 info using npm@3.10.10
+3 info using node@v6.12.0
+4 verbose config Skipping project config: /home/sopress/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData bulma
+9 silly fetchNamedPackageData bulma
+10 silly mapToRegistry name bulma
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'bulma',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   escapedName: 'bulma',
+13 silly mapToRegistry   name: 'bulma',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri https://registry.npmjs.org/bulma
+15 verbose request uri https://registry.npmjs.org/bulma
+16 verbose request no auth needed
+17 info attempt registry request try #1 at 5:24:38 PM
+18 verbose request id ef41152179e8c43f
+19 http request GET https://registry.npmjs.org/bulma
+20 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.36.162:443
+21 info attempt registry request try #2 at 5:26:59 PM
+22 http request GET https://registry.npmjs.org/bulma
+23 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.36.162:443
+24 info attempt registry request try #3 at 5:30:09 PM
+25 http request GET https://registry.npmjs.org/bulma
+26 silly fetchPackageMetaData Error: connect ETIMEDOUT 151.101.36.162:443
+26 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1020:11)
+26 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1043:20)
+26 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1090:14)
+26 silly fetchPackageMetaData  error for bulma { Error: connect ETIMEDOUT 151.101.36.162:443
+26 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1020:11)
+26 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1043:20)
+26 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1090:14)
+26 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+26 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+26 silly fetchPackageMetaData   syscall: 'connect',
+26 silly fetchPackageMetaData   address: '151.101.36.162',
+26 silly fetchPackageMetaData   port: 443 }
+27 silly rollbackFailedOptional Starting
+28 silly rollbackFailedOptional Finishing
+29 silly runTopLevelLifecycles Finishing
+30 silly install printInstalled
+31 verbose stack Error: connect ETIMEDOUT 151.101.36.162:443
+31 verbose stack     at Object.exports._errnoException (util.js:1020:11)
+31 verbose stack     at exports._exceptionWithHostPort (util.js:1043:20)
+31 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1090:14)
+32 verbose cwd /home/sopress/dev/contentcamp
+33 error Linux 4.10.0-40-generic
+34 error argv "/usr/bin/node" "/usr/bin/npm" "install" "bulma"
+35 error node v6.12.0
+36 error npm  v3.10.10
+37 error code ETIMEDOUT
+38 error errno ETIMEDOUT
+39 error syscall connect
+40 error network connect ETIMEDOUT 151.101.36.162:443
+41 error network This is most likely not a problem with npm itself
+41 error network and is related to network connectivity.
+41 error network In most cases you are behind a proxy or have bad network settings.
+41 error network
+41 error network If you are behind a proxy, please make sure that the
+41 error network 'proxy' config is set properly.  See: 'npm help config'
+42 verbose exit [ 1, true ]
